@@ -10,8 +10,21 @@ $(document).ready(function() {
     }
 
     let sent2 = reverseString(sent);
-    let sent3 = sentence + sent2;
     let sent4 = Math.floor(countWords(sentence) / 2)
     let sent5 = sentence.charAt(sent4) + sentence + sent2
-    console.log(sent5);
+    let sent6 = reverseString(sent5)
+    console.log(sent6);
+
+    $(function() {
+        $(document).on('click', '#repeatpic', function() {
+            $("#repeat").text(sentence).toggle();
+            $("#jumble").hide();
+        });
+    });
+    $(function() {
+        $(document).on('click', '#jumblepic', function() {
+            $("#jumble").text(sent6).toggle();
+            $("#repeat").hide();
+        });
+    });
 });
