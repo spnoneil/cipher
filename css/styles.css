@@ -1,4 +1,15 @@
 #repeat,
 #jumble {
+    position: absolute;
+    bottom: 50%;
+    left: 40%;
     display: hidden;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+    margin: 30px;
 }
